@@ -39,6 +39,7 @@
 
   // prettier-ignore
   const COMMANDS = new Map([
+    ['jam', { name: 'Music', url: 'https://www.youtube.com/watch?v=yunQmahLKEo&list=PLFNs1lnnodNIvsBzKLoSMoLc_PpJAkcrk&pp=iAQB' }],
     ['c', { name: 'ChatGPT', searchTemplate: '?q={}', url: 'https://chatgpt.com' }],
     ['d', { name: 'Drive', url: 'https://drive.google.com/drive/u/0/my-drive' }],
     ['t', { name: 'Twitch', searchTemplate: 'search?term={}', url: 'https://www.twitch.tv/' }],
@@ -85,6 +86,9 @@
       overflow: hidden;
       padding: 0;
       width: 100vw;
+      /* display: flex; */
+      /* align-items: center; Vertically centers */
+      /* justify-content: center;  */
     }
 
     .command {
@@ -134,7 +138,7 @@
 
     @media (min-width: 65rem) {
       .commands {
-        columns: 5;
+        columns: 4;
         max-width: 55rem;
       }
     }
@@ -550,12 +554,10 @@
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    min-height: 100dvh;
+    min-height: 100vh;
     overflow: hidden;
-    /* padding: calc(var(--space) * 4) var(--space); */
-    padding-left: 10%;
     position: relative;
-    width: 105vw;
+    min-width: 100vw;
   }
 </style>
 
