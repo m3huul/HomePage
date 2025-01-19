@@ -19,7 +19,7 @@
     }
 }
 
-.commands {
+commands-component::part(commands) {
     border-radius: var(--border-radius);
     column-gap: 0;
     columns: 2;

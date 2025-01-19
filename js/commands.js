@@ -1,4 +1,4 @@
-import { CONFIG, COMMANDS } from './config.js';
+import { CONFIG, COMMANDS } from '/js/config.js';
 
 class Commands extends HTMLElement {
     constructor() {
